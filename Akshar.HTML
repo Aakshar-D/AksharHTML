@@ -100,31 +100,49 @@ if (country === "USA"){
 var el_up = document.getElementById("USAID");
  el_up.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/usa-leads-20/items/"
           + result ; 
+          function GFG_Fun() {
+      
+    // Create anchor element.
+    var a = document.createElement('a'); 
+      
+    // Create the text node for anchor element.
+    var link = document.createTextNode("Podio ID");
+      
+    // Append the text node to anchor element.
+   a.appendChild(link); 
+      
+    // Set the title.
+    a.title = "Podio ID"; 
+      
+    // Set the href property.
+    a.href = el_up.innerHTML ; 
+      
+    // Append the anchor element to the body.
+    document.body.appendChild(a); }
 }else {
   var el_down = document.getElementById("CANID");
   el_down.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/leads-canada-direct-20/items/"
-          + result ; }
-
-//function GFG_Fun() {
+          + result ; 
+          function GFG_Fun() {
       
     // Create anchor element.
-    //var a = document.createElement('a'); 
+    var a = document.createElement('a'); 
       
     // Create the text node for anchor element.
-    //var link = document.createTextNode("Podio ID");
+    var link = document.createTextNode("Podio ID");
       
     // Append the text node to anchor element.
-   // a.appendChild(link); 
+   a.appendChild(link); 
       
     // Set the title.
-    //a.title = "Podio ID"; 
+    a.title = "Podio ID"; 
       
     // Set the href property.
-   // a.href =  ; 
+    a.href = el_down.innerHTML ; 
       
     // Append the anchor element to the body.
-   // document.body.appendChild(a);
-//}
+    document.body.appendChild(a); }}
+
 </script> 
 
 </body>
