@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+table.roundedCorners { 
+  border: 1px solid DarkOrange;
+  border-radius: 13px; 
+  border-spacing: 0;
+  }
+table.roundedCorners td, 
+table.roundedCorners th { 
+  border-bottom: 1px solid DarkOrange;
+  padding: 10px; 
+  }
+table.roundedCorners tr:last-child > td {
+  border-bottom: none;
+}
+</style>
+
+<br>
+
+<table>
+  <tr>
+    <td><font size="+3" color="DarkOrange">Accountants Campaign</font> </td>
+  </tr>
+</table>
+
+<br>
+
+<table>
+  <tr>
+    <td><font size="+2" color="DarkGrey">Customer Details</font> </td>
+  </tr>
+</table>
+
+<table class="roundedCorners">
+  <tr>
+    <td style="text-align:right">Podio ID:</td>
+    <td><font size="+1">@Customer.podio_lead_id@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Company:</td>
+    <td><font size="+1">@Customer.company@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">First Name:</td>
+    <td><font size="+1">@Customer.first_name@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Last Name:</td>
+    <td><font size="+1">@Customer.last_name@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Phone:</td>
+    <td><font size="+1">@Customer.number1@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Email:</td>
+    <td><font size="+1">@Customer.email@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Lead Source:</td>
+    <td><font size="+1">@Customer.lead_source@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Segment:</td>
+    <td><font size="+1">@Customer.segment@</font></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Sales Channel:</td>
+    <td><font size="+1">@Customer.sales_channel@</font></td>
+  </tr>
+
+  <tr>
+    <td style="text-align:right">Podio Link:</td>
+    <td><font size="+1">Test</font></td>
+  </tr>
+
+</table>
+
+<p id = "USAID" style =
+"font-size: 19px; font-weight: bold;">
+</p>
+
+<p id = "CANID" style =
+"font-size: 19px; font-weight: bold;">
+</p>
+
+<button onclick = "GFG_Fun()">
+click here
+</button>
+
+<script>
+  let text = "USALead924439";
+  let result = text.substring(7,20);
+  let country = text.substring(0,3);
+  
+if (country === "USA"){
+var el_up = document.getElementById("USAID");
+ el_up.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/usa-leads-20/items/"
+          + result ; 
+}else {
+  var el_down = document.getElementById("CANID");
+  el_down.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/leads-canada-direct-20/items/"
+          + result ; }
+
+//function GFG_Fun() {
+      
+    // Create anchor element.
+    //var a = document.createElement('a'); 
+      
+    // Create the text node for anchor element.
+    //var link = document.createTextNode("Podio ID");
+      
+    // Append the text node to anchor element.
+   // a.appendChild(link); 
+      
+    // Set the title.
+    //a.title = "Podio ID"; 
+      
+    // Set the href property.
+   // a.href =  ; 
+      
+    // Append the anchor element to the body.
+   // document.body.appendChild(a);
+//}
+</script> 
+
+</body>
+</html>
