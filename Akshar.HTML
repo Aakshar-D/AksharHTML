@@ -79,52 +79,48 @@ table.roundedCorners tr:last-child > td {
 
 </table>
 
-<p id = "USAID" style =
-"font-size: 19px; font-weight: bold;">
-</p>
-
-<p id = "CANID" style =
-"font-size: 19px; font-weight: bold;">
+<p id = "ID" style =
+  "font-size: 19px; font-weight: bold;">
 </p>
 
 <button onclick = "GFG_Fun()">
-click here
+  click here
 </button>
 
+<p id = "GFG_DOWN" style =
+  "color: green; font-size: 24px; font-weight: bold;">
+</p>
+
 <script>
+
   let text = "USALead924439";
   let result = text.substring(7,20);
-  let country = text.substring(0,3);
-  
-if (country === "USA"){
-var el_up = document.getElementById("USAID");
- el_up.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/usa-leads-20/items/"
-          + result ; 
-}else {
-  var el_down = document.getElementById("CANID");
-  el_down.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/leads-canada-direct-20/items/"
-          + result ; }
 
-//function GFG_Fun() {
-      
-    // Create anchor element.
-    //var a = document.createElement('a'); 
-      
-    // Create the text node for anchor element.
-    //var link = document.createTextNode("Podio ID");
-      
-    // Append the text node to anchor element.
-   // a.appendChild(link); 
-      
-    // Set the title.
-    //a.title = "Podio ID"; 
-      
-    // Set the href property.
-   // a.href =  ; 
-      
-    // Append the anchor element to the body.
-   // document.body.appendChild(a);
-//}
+  var el_up = document.getElementById("ID");
+    
+  el_up.innerHTML = "https://podio.com/powerstorescom/sales-canada-direct/apps/usa-leads-20/items/"
+          + result ;
+    
+  function GFG_Fun() {
+        
+      // Create anchor element.
+      var a = document.createElement('a'); 
+        
+      // Create the text node for anchor element.
+      var link = document.createTextNode("This is link");
+        
+      // Append the text node to anchor element.
+      a.appendChild(link); 
+        
+      // Set the title.
+      a.title = "This is Link"; 
+        
+      // Set the href property.
+      a.href = el_up.innerHTML ; 
+        
+      // Append the anchor element to the body.
+      document.body.prepend(a); 
+  }
 </script> 
 
 </body>
